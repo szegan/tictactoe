@@ -1,5 +1,14 @@
 window.addEventListener('DOMContentLoaded',()=> {});
 
+var myVar;
+function myFunction(){
+   myVar = setTimeout(showPage, 1000);}
+
+function showPage(){
+   document.getElementById("loader").style.display="none";
+   document.getElementById("myDiv").style.display="block";
+}
+
 /* save a reference to the DOM node, we need get an array to reurns a nodeList. 
    Get a references to the player display, reset button and the winner annoucer. */
 const tiles = Array.from(document.querySelectorAll('.tile'));

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
+
   <link rel="stylesheet" href="asset/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
-<body>
-  
 
-  <main class="background">
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+  
+  <main style="display:none;" id="myDiv" class="animate-bottom">
     <section class="title">
-      <h1>TIC TAC TOE</h1>
+      <h1>
+        <span class="white">TIC</span>
+        <span class="red">TAC</span>
+        <span class="white">TOE</span>
+      </h1>
     </section>
 
     <!-- Display who is turn X or O  -->
@@ -48,4 +53,5 @@
 
 </body>
 <script src="asset/js/index.js"></script>
+
 </html>

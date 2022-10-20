@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    text-align: center;
+    font-family: 'Staatliches', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.title{
+    margin-top: 150px;
+    font-size: 40px;
+    font-display: swap;
+    text-shadow: 0 0 5px white;
+}
+
+/* Separate the container by 33% to form the board.  */
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px; 
+}
+
+.display{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.tile{
+    border: 2px solid white;
+    border-radius: 2px;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.tile:hover{
+    background-color: #333333;
+}
+
+.playerX{
+    color: #F4708F;
+    text-shadow: 0 0 5px #F4708F;
+}
+
+.playerO{
+    color: #14AEFE;
+    text-shadow: 0 0 5px #14AEFE;
+}
+
+#reset{
+    color: white;
+    transition: 0.25s;
+    border: 2px solid;
+    border-radius: 12px;
+    line-height: 1;
+    margin: 20px;
+    padding: 1em 2em;
+}
+
+#reset:hover,
+#reset:focus {
+    box-shadow: 0px 0px 10px white;
+    transform: translateY(-0.25em);
+
+
+}

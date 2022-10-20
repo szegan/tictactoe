@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="asset/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+  <main class="background">
+    <section class="title">
+      <h1>TIC TAC TOE</h1>
+    </section>
+
+    <!-- Display who is turn X or O  -->
+    <section class="display">
+      Player <span class="display-player playerX"> X </span> Round
+    </section>
+
+    <!-- Create the 9 squared box -->
+    <section class="board">
+      <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </section>
+</section>
+
+<!-- Annoucer = Display who is the winner, default is empty string. -->
+<!-- Button   = Play a new round, -->
+    <section class="display announcer hide"></section>
+    <section class="controls">
+      <button id="reset">RESET</button>
+    </section>
+  </main>
+
+</body>
+<script src="asset/js/index.js"></script>
+</html>
